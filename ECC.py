@@ -6,19 +6,15 @@ class ECCPoint:
         self.b = b
 
     def is_valid_curve(self):
-        # Check if 4a³ + 27b² ≠ 0 (mod p)
         return (4 * (self.a ** 3) + 27 * (self.b ** 2)) % p != 0
 
     def is_on_curve(self):
-        # Check if y² ≡ x³ + ax + b (mod p)
         return (self.y ** 2) % p == (self.x ** 3 + self.a * self.x + self.b) % p
 
     def add_points(self, p1, p2):
         if p1.x == p2.x and p1.y == p2.y:
-            # Point doubling
             slope = (3 * (p1.x ** 2) + self.a) / (2 * p1.y)
         else:
-            # Point addition
             slope = (p2.y - p1.y) / (p2.x - p1.x)
         x3 = (slope ** 2) - p1.x - p2.x
         y3 = slope * (p1.x - x3) - p1.y
@@ -59,7 +55,6 @@ def print_menu():
 
 
 if __name__ == "__main__":
-    # Define parameters
     p = 17
     a = 2
     b = 2
