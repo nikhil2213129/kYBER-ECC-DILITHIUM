@@ -1,5 +1,3 @@
-Here’s a polished **README.md** you can use directly on GitHub for your Hybrid PQC–ECC CIA Cryptosystem project:
-
 ```markdown
 # Hybrid PQC–ECC CIA Cryptosystem
 
@@ -15,11 +13,11 @@ The system combines:
 
 ## Features
 
-- 🔒 **Confidentiality**: Kyber768 + AES-GCM
-- ✅ **Integrity**: AES-GCM + ECC binding
-- 🧾 **Authentication**: ECC + Dilithium3 signatures
-- 🛡️ **Quantum Resistance**: Kyber + Dilithium secure against Shor’s and Grover’s algorithms
-- ⚡ **Hybrid Agility**: Combines classical ECC with PQC for defense-in-depth
+- 🔒 Confidentiality: Kyber768 + AES-GCM  
+- ✅ Integrity: AES-GCM + ECC binding  
+- 🧾 Authentication: ECC + Dilithium3 signatures  
+- 🛡️ Quantum Resistance: Kyber + Dilithium secure against Shor’s and Grover’s algorithms  
+- ⚡ Hybrid Agility: Combines classical ECC with PQC for defense-in-depth  
 
 ---
 
@@ -96,7 +94,3 @@ It is **not production-ready** and should not be used in real-world secure commu
 
 MIT License – free to use, modify, and distribute with attribution.
 ```
-
----
-
-Would you like me to also generate a **diagram (architecture flow)** for the README so it looks visually appealing on GitHub? That would make it easier for readers to grasp the encryption pipeline at a glance.
