@@ -1,13 +1,13 @@
 ```markdown
 # Hybrid PQC–ECC CIA Cryptosystem
 
-This repository contains a **research-grade demonstrative implementation** of a hybrid cryptosystem that integrates **Post-Quantum Cryptography (PQC)** with **Elliptic Curve Cryptography (ECC)** to achieve **Confidentiality, Integrity, and Authentication (CIA)** in a single pipeline.
+This repository contains a research-grade demonstrative implementation of a hybrid cryptosystem that integrates Post-Quantum Cryptography (PQC) with Elliptic Curve Cryptography (ECC) to achieve Confidentiality, Integrity, and Authentication (CIA) in a single pipeline.
 
 The system combines:
-- **Kyber768 (KEM)** – Post-quantum key encapsulation for confidentiality
-- **AES-GCM** – Symmetric encryption for message confidentiality
-- **ECC (ECDH over SECP256R1)** – Authentication and binding of ciphertext
-- **Dilithium3 (Signature)** – Post-quantum digital signatures for authenticity and integrity
+- Kyber768 (KEM) – Post-quantum key encapsulation for confidentiality
+- AES-GCM – Symmetric encryption for message confidentiality
+- ECC (ECDH over SECP256R1) – Authentication and binding of ciphertext
+- Dilithium3 (Signature) – Post-quantum digital signatures for authenticity and integrity
 
 ---
 
@@ -26,7 +26,7 @@ The system combines:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/hybrid-pqc-ecc-cia.git
+git clone #
 cd hybrid-pqc-ecc-cia
 pip install liboqs-python cryptography
 ```
@@ -38,7 +38,7 @@ pip install liboqs-python cryptography
 Run the demonstration script:
 
 ```bash
-python hybrid_crypto.py
+python IntegratedTLS.py
 ```
 
 Expected output:
@@ -54,7 +54,7 @@ Match    : True
 ## File Structure
 
 ```
-├── hybrid_crypto.py   # Full implementation (single file)
+├── IntegratedTLS.py   # Full implementation (single file)
 ├── README.md          # Project documentation
 ```
 
