@@ -1,0 +1,24 @@
+[package]
+name = "hybrid-pqc"
+version = "0.1.0"
+edition = "2021"
+description = "Hybrid classical/post-quantum cryptography: X25519+Kyber768 KEM combiner and Ed25519+Dilithium3 signature combiner"
+
+[dependencies]
+# Post-quantum KEM (ML-KEM predecessor, NIST round-3 Kyber)
+pqcrypto-kyber = "0.8"
+# Post-quantum signature (ML-DSA predecessor, NIST round-3 Dilithium)
+pqcrypto-dilithium = "0.5"
+# Shared traits (PublicKey/SecretKey/Ciphertext/SharedSecret/DetachedSignature: as_bytes/from_bytes)
+pqcrypto-traits = "0.3"
+
+# Classical ECC primitives
+x25519-dalek = { version = "2", features = ["static_secrets", "getrandom"] }
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+
+# Randomness + KDF for combining the two KEM shared secrets
+rand_core = { version = "0.6", features = ["getrandom"] }
+hkdf = "0.12"
+sha2 = "0.10"
+
+hex = "0.4"
